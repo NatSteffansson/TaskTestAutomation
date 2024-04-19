@@ -80,7 +80,7 @@ public class MyStepdefs {
         driver.findElement(By.id("signupunlicenced_password")).sendKeys(password);
         driver.findElement(By.id("signupunlicenced_confirmpassword")).sendKeys(confirmPassword);
         if (!confirmPassword.equals(password)) {
-            click(By.cssSelector("div.caption"));
+            click(By.cssSelector("label[for='sign_up_25']")); //click(By.cssSelector("div.caption"));
         }
     }
 
